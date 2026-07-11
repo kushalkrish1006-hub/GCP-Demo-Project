@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2026-07-12T00:00:00.000Z" agent="Codex" version="24.7.17">
+  <diagram id="architecture-v1" name="Architecture v1">
+    <mxGraphModel dx="1042" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="GCP E-Commerce Analytics Pipeline - Architecture v1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry x="130" y="60" width="590" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="faker" value="Python Faker" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E3F2FD;strokeColor=#1E88E5;fontColor=#0F172A;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="140" width="240" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="gcs" value="GCS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#E8F5E9;strokeColor=#43A047;fontColor=#0F172A;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="270" width="240" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="pyspark" value="PySpark" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFF3E0;strokeColor=#FB8C00;fontColor=#0F172A;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="400" width="240" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="bigquery" value="BigQuery" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#EDE7F6;strokeColor=#5E35B1;fontColor=#0F172A;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="530" width="240" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="looker" value="Looker Studio" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FCE4EC;strokeColor=#D81B60;fontColor=#0F172A;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="305" y="660" width="240" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-faker-gcs" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#4B5563;endArrow=block;endFill=1;" edge="1" parent="1" source="faker" target="gcs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-gcs-pyspark" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#4B5563;endArrow=block;endFill=1;" edge="1" parent="1" source="gcs" target="pyspark">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-pyspark-bigquery" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#4B5563;endArrow=block;endFill=1;" edge="1" parent="1" source="pyspark" target="bigquery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-bigquery-looker" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#4B5563;endArrow=block;endFill=1;" edge="1" parent="1" source="bigquery" target="looker">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
