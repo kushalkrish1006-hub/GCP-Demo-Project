@@ -44,6 +44,8 @@ This platform is designed to:
 
 ## 🏗️ Architecture Overview
 
+Draw.io diagram: [architecture/architecture_v1.drawio](architecture/architecture_v1.drawio)
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │               GCP E-COMMERCE ANALYTICS PLATFORM                 │
@@ -146,6 +148,9 @@ GCP-Demo-Project/
 │   ├── RESTRUCTURED_ARCHITECTURE.md    # Detailed architecture
 │   ├── DATA_PIPELINE_ARCHITECTURE.md   # Pipeline design
 │   └── api_specs/                      # API documentation
+│
+├── architecture/                        # Architecture diagrams
+│   └── architecture_v1.drawio           # Python Faker → GCS → PySpark → BigQuery → Looker Studio
 │
 ├── notebooks/                           # Jupyter Notebooks
 │   ├── 01_gcp_basics.ipynb
